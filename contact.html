@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Lancez votre briefing - GoEvents</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body class="bg-midnight-abyss text-white">
+
+    <header class="fixed top-0 left-0 w-full z-50 transition-all duration-500 py-8">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="/" class="text-2xl font-black tracking-tighter hover:scale-105 transition-transform">
+                GO<span class="text-gold-champagne">EVENTS</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-10">
+                <a href="/" class="text-xs font-bold tracking-widest hover:text-gold-champagne transition-colors">ACCUEIL</a>
+                <a href="/gocine.html" class="text-xs font-bold tracking-widest hover:text-gold-champagne transition-colors">GOCINÉ</a>
+                <a href="/services.html" class="text-xs font-bold tracking-widest hover:text-gold-champagne transition-colors">SERVICES</a>
+                <a href="/portfolio.html" class="text-xs font-bold tracking-widest hover:text-gold-champagne transition-colors">PORTFOLIO</a>
+                <a href="/contact.html" class="text-xs font-bold tracking-widest text-gold-champagne">CONTACT</a>
+            </nav>
+            <a href="/contact.html" class="hidden md:block border border-gold-champagne/30 px-6 py-2 rounded-full text-[10px] font-bold tracking-widest hover:bg-gold-champagne hover:text-midnight-abyss transition-all duration-500">
+                BRIEFEZ-NOUS
+            </a>
+        </div>
+    </header>
+
+    <main class="pt-32">
+        <section class="py-24 relative overflow-hidden">
+            <div class="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gold-champagne/5 rounded-full blur-[150px] pointer-events-none"></div>
+
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="grid lg:grid-cols-2 gap-20 items-center">
+                    <div class="reveal">
+                        <span class="text-gold-champagne text-sm font-bold tracking-[0.3em] uppercase block mb-6">Briefing en ligne</span>
+                        <h1 class="text-5xl md:text-7xl font-black tracking-tighter mb-8 leading-none">
+                            CRÉONS <br />
+                            <span class="text-gold-champagne italic font-light italic">L'INOUBLIABLE.</span>
+                        </h1>
+                        <p class="text-white/40 text-lg max-w-md font-light leading-relaxed mb-12">
+                            Nos experts vous répondent sous 24h pour transformer votre vision en une réalité cinématographique d'exception.
+                        </p>
+
+                        <div class="space-y-8">
+                            <div class="flex items-center gap-6 group">
+                                <div class="w-12 h-12 rounded-full border border-gold-champagne/20 flex items-center justify-center text-gold-champagne group-hover:bg-gold-champagne group-hover:text-midnight-abyss transition-all">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                </div>
+                                <span class="font-bold tracking-widest text-sm italic">contact@goevents.fr</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass p-10 md:p-16 rounded-2xl reveal relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-8 opacity-5">
+                            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        </div>
+                        <form id="contactForm" class="space-y-8 relative z-10">
+                            <div class="grid md:grid-cols-2 gap-8">
+                                <div class="space-y-3">
+                                    <label class="text-[10px] uppercase tracking-[0.2em] font-bold text-white/30 ml-1">Nom Complet</label>
+                                    <input type="text" id="name" required placeholder="Jean Dupont" class="w-full bg-white/5 border border-white/10 rounded-lg px-6 py-4 focus:border-gold-champagne/50 outline-none transition-colors font-light">
+                                </div>
+                                <div class="space-y-3">
+                                    <label class="text-[10px] uppercase tracking-[0.2em] font-bold text-white/30 ml-1">Email Professionnel</label>
+                                    <input type="email" id="email" required placeholder="jean@entreprise.com" class="w-full bg-white/5 border border-white/10 rounded-lg px-6 py-4 focus:border-gold-champagne/50 outline-none transition-colors font-light">
+                                </div>
+                            </div>
+                            <div class="space-y-3">
+                                <label class="text-[10px] uppercase tracking-[0.2em] font-bold text-white/30 ml-1">Votre Projet</label>
+                                <textarea id="message" required rows="4" placeholder="Décrivez votre vision en quelques lignes..." class="w-full bg-white/5 border border-white/10 rounded-lg px-6 py-4 focus:border-gold-champagne/50 outline-none transition-colors resize-none font-light"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-gold-champagne text-midnight-abyss font-black py-5 rounded-lg tracking-[0.3em] hover:scale-[1.02] active:scale-[0.98] transition-all duration-500 uppercase">
+                                Envoyer le Briefing
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-24 bg-midnight-abyss border-t border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="/" class="text-3xl font-black tracking-tighter mb-6 block">
+                        GO<span class="text-gold-champagne">EVENTS</span>
+                    </a>
+                    <p class="text-white/40 max-w-sm font-light leading-relaxed">
+                        L'excellence cinématographique au service de vos événements les plus prestigieux. Branche exclusive d'Ajr_Groupe pour la production de haut niveau.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold tracking-[0.2em] uppercase mb-8 text-gold-champagne">Exploration</h4>
+                    <ul class="flex flex-col gap-4 text-sm text-white/40 font-medium">
+                        <li><a href="/" class="hover:text-white transition-colors">Accueil</a></li>
+                        <li><a href="/gocine.html" class="hover:text-white transition-colors">GoCiné Gallery</a></li>
+                        <li><a href="/services.html" class="hover:text-white transition-colors">Nos Services</a></li>
+                        <li><a href="/portfolio.html" class="hover:text-white transition-colors">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold tracking-[0.2em] uppercase mb-8 text-gold-champagne">Réseaux</h4>
+                    <ul class="flex flex-col gap-4 text-sm text-white/40 font-medium">
+                        <li><a href="#" class="hover:text-white transition-colors">Instagram</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Vimeo</a></li>
+                        <li><a href="/contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-6">
+                <p class="text-[10px] text-white/20 tracking-widest uppercase">© 2026 GoEvents | Ajr_Groupe. Tous droits réservés.</p>
+                <div class="flex gap-8 text-[10px] text-white/20 tracking-widest uppercase">
+                    <a href="#" class="hover:text-white transition-colors">Mentions Légales</a>
+                    <a href="#" class="hover:text-white transition-colors">Confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>
